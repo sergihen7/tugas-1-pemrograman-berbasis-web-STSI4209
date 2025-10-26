@@ -1,0 +1,12 @@
+/* a */
+a {
+  color: rgb(98, 95, 255);
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+body.light a {
+  color: rgb(21, 130, 254);
+}

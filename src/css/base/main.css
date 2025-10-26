@@ -1,0 +1,41 @@
+@import "./heading.css";
+@import "./button.css";
+@import "./a.css";
+@import "./navbar.css";
+@import "./container.css";
+@import "./input.css";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+/* Default (dark) */
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  transition: background-color 0.2s ease-in-out;
+}
+
+body.dark {
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #000;
+}
+
+/* Light mode */
+body.light {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

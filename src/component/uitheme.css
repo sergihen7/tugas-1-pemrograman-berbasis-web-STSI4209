@@ -1,0 +1,19 @@
+.uitheme {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 10px;
+  display: flex;
+  background-color: #1a1a1a;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1.4rem;
+}
+
+body.light .uitheme {
+  background-color: #f9f9f9;
+}
+body.light .uitheme:hover {
+  border-color: #1a1a1a;
+}
