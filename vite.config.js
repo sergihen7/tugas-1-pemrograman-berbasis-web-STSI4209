@@ -9,6 +9,7 @@ export default defineConfig({
         about: "about.html",
         dashboard: "dashboard.html",
         tracking: "tracking.html",
+        stock: "stock.html",
       },
     },
   },
