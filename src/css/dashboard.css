@@ -1,0 +1,152 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboard .content {
+  flex: 1;
+}
+.dashboard .content .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: 60px;
+  background-color: #161616;
+  padding: 0 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dashboard .container {
+  max-width: 1024px !important;
+}
+
+.card {
+  position: relative;
+  background-color: #5627ae;
+  padding: 20px;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.card > * > * {
+  margin: 0;
+  padding: 0;
+}
+
+.card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.card .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+#track-status {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#track-detail {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.track-content {
+  padding-bottom: 20px;
+}
+
+.track-dot {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.track-dot .dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.track-dot .line {
+  margin-left: 4px;
+  display: block;
+  width: 2px;
+  height: 100%;
+  background-color: #fff;
+}
+
+.track-item {
+  display: flex;
+  align-items: stretch;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+#book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+#book-list .book {
+  position: relative;
+  border-radius: 10px;
+  transition: background-color 0.2s ease-in-out;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#book-list .book .cover {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+#book-list .book .book-info {
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.popup-book-cover {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  overflow: hidden;
+}
+
+/* Light mode */
+
+body.light .dashboard .content .header {
+  background-color: #ececec;
+}
+
+body.light .card {
+  background-color: #bab5ff;
+}
+
+body.light .track-dot .dot {
+  background-color: #1a1a1a;
+}
+body.light .track-dot .line {
+  background-color: #1a1a1a;
+}

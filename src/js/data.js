@@ -41,7 +41,7 @@ export const dataPengguna = [
   },
 ];
 
-var dataBahanAjar = [
+export const dataBahanAjar = [
   {
     kodeLokasi: "0TMP01",
     kodeBarang: "ASIP4301",
@@ -49,7 +49,7 @@ var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "2",
     stok: 548,
-    cover: "img/pengantar_komunikasi.jpg",
+    cover: "/book/pengantar_komunikasi.jpg",
   },
   {
     kodeLokasi: "0JKT01",
@@ -58,7 +58,7 @@ var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "3",
     stok: 392,
-    cover: "img/manajemen_keuangan.jpg",
+    cover: "/book/manajemen_keuangan.jpg",
   },
   {
     kodeLokasi: "0SBY02",
@@ -67,7 +67,7 @@ var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "1",
     stok: 278,
-    cover: "img/kepemimpinan.jpg",
+    cover: "/book/kepemimpinan.jpg",
   },
   {
     kodeLokasi: "0MLG01",
@@ -76,7 +76,7 @@ var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "2",
     stok: 165,
-    cover: "img/mikrobiologi.jpg",
+    cover: "/book/mikrobiologi.jpg",
   },
   {
     kodeLokasi: "0UPBJJBDG",
@@ -85,11 +85,11 @@ var dataBahanAjar = [
     jenisBarang: "BMP",
     edisi: "4",
     stok: 204,
-    cover: "img/paud_perkembangan.jpg",
+    cover: "/book/paud_perkembangan.jpg",
   },
 ];
 
-var dataTracking = {
+export const dataTracking = {
   2023001234: {
     nomorDO: "2023001234",
     nama: "Rina Wulandari",

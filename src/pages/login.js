@@ -2,6 +2,7 @@ import Swal from "sweetalert2";
 import "../css/login.css";
 import { dataPengguna } from "../js/data.js";
 import "../js/main.js";
+import { setAkun } from "../js/akun.js";
 
 document.getElementById("login").addEventListener("submit", (e) => {
   const form = new FormData(e.target);
@@ -13,7 +14,7 @@ document.getElementById("login").addEventListener("submit", (e) => {
   });
 
   if (pengguna) {
-    localStorage.setItem("pengguna", JSON.stringify(pengguna));
+    setAkun(pengguna);
     Swal.fire({
       icon: "success",
       title: "Login Berhasil",

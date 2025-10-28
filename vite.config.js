@@ -7,6 +7,8 @@ export default defineConfig({
         index: "index.html",
         login: "login.html",
         about: "about.html",
+        dashboard: "dashboard.html",
+        tracking: "tracking.html",
       },
     },
   },

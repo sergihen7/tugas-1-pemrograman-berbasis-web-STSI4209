@@ -1,0 +1,10 @@
+main {
+  margin-top: 180px !important;
+}
+
+main.container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}

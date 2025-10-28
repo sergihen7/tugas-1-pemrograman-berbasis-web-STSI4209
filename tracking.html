@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tracker - Tracking Bahan Ajar</title>
+  </head>
+  <body class="dark">
+    <div class="dashboard">
+      <div class="sidebar">
+        <h4 class="sidebar-brand"><a href="dashboard.html">TrackAja</a></h4>
+        <ul class="nav-list">
+          <li><a href="stock.html">Informasi Bahan Ajar</a></li>
+          <li><a href="tracking.html">Tracking Pengiriman</a></li>
+          <li>
+            <a href="" onclick="return false"
+              >Laporan <i class="bi bi-chevron-down"></i
+            ></a>
+            <ul>
+              <li><a href="">Monitoring Progress DO Bahan Ajar</a></li>
+              <li><a href="">Rekap Bahan Ajar</a></li>
+            </ul>
+          </li>
+          <li><a href="">Histori Transaksi Bahan Ajar</a></li>
+          <li><a href="" id="logout">Keluar</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="header">
+          <h6 style="margin: 0">Login Sebagai, <span id="username"></span></h6>
+          <div id="uitheme"></div>
+        </div>
+        <div class="container">
+          <h1>Tracker</h1>
+
+          <form id="track">
+            <label for="track-id" style="margin-bottom: 10px; display: block"
+              >Masukan No. DO/Billing</label
+            >
+            <input
+              type="number"
+              name="track-id"
+              id="track-id"
+              placeholder="No. DO/Biling"
+            />
+            <div style="text-align: end">
+              <button class="btn" type="submit">Cari</button>
+            </div>
+          </form>
+
+          <hr style="margin: 2rem 0" />
+
+          <div id="track-card"></div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/pages/dashboard.js"></script>
+  </body>
+</html>

@@ -26,3 +26,8 @@ body.light input {
 body.light input:hover {
   border-color: #1a1a1a;
 }
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}

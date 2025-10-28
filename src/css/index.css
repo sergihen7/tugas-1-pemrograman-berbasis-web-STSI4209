@@ -1,0 +1,19 @@
+main {
+  text-align: center;
+  margin-top: 180px !important;
+}
+
+main.container {
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.placeholder-img {
+  width: 50%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0 0 2000px 2000px;
+}

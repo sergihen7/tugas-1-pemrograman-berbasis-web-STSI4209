@@ -49,3 +49,15 @@ body.light .popup .popup-content {
   right: 10px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .popup .popup-content {
+    min-width: unset;
+    max-width: unset;
+    width: 100%;
+  }
+
+  .popup {
+    padding: 1rem;
+  }
+}
